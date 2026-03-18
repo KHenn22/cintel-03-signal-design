@@ -128,3 +128,16 @@ git push -u origin main
 
 - Use the **UP ARROW** and **DOWN ARROW** in the terminal to scroll through past commands.
 - Use `CTRL+f` to find (and replace) text within a file.
+
+## Modifications
+
+- Added new derived signal column `high_error_alert` to the signal design pipeline
+- Uses a boolean flag (`True`) to identify any observation where the error rate (errors/requests) exceeds 5%.  Otherwise it is `False`.
+- This modification makes it easier to quickly identify problematic observations by flagging those above a certain threshold (5%).
+
+- Code to run
+```
+uv run python -m cintel.signal_design_hennelly
+```
+
+-artifacts/signals_hennelly.csv now includes a `high_error_alert` column
