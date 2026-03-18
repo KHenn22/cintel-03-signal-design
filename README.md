@@ -141,3 +141,5 @@ uv run python -m cintel.signal_design_hennelly
 ```
 
 -artifacts/signals_hennelly.csv now includes a `high_error_alert` column
+
+-observed that none of the present data was flagged as a `high_error_alert`.  All were false.
