@@ -63,3 +63,28 @@
 2026-03-17 16:47:07 | INFO | P3 | Pipeline executed successfully!
 2026-03-17 16:47:07 | INFO | P3 | ========================
 2026-03-17 16:47:07 | INFO | P3 | END main()
+2026-03-20 16:38:33 | INFO | P3 | === RUN START ===
+2026-03-20 16:38:33 | INFO | P3 | project=CINTEL
+2026-03-20 16:38:33 | INFO | P3 | repo_dir=cintel-03-signal-design
+2026-03-20 16:38:33 | INFO | P3 | python=3.14.3
+2026-03-20 16:38:33 | INFO | P3 | os=Windows 11
+2026-03-20 16:38:33 | INFO | P3 | shell=powershell
+2026-03-20 16:38:33 | INFO | P3 | cwd=.
+2026-03-20 16:38:33 | INFO | P3 | github_actions=False
+2026-03-20 16:38:33 | INFO | P3 | ========================
+2026-03-20 16:38:33 | INFO | P3 | START main()
+2026-03-20 16:38:33 | INFO | P3 | ========================
+2026-03-20 16:38:33 | INFO | P3 | ROOT_DIR = .
+2026-03-20 16:38:33 | INFO | P3 | DATA_FILE = data\airline_ontime_data_jan_2025.csv
+2026-03-20 16:38:33 | INFO | P3 | OUTPUT_FILE = artifacts\aviation_signals_jan_2025.csv
+2026-03-20 16:38:33 | INFO | P3 | ARTIFACTS_DIR = artifacts
+2026-03-20 16:38:33 | INFO | P3 | Loaded 539747 flight records
+2026-03-20 16:38:33 | INFO | P3 | Designing signals from the raw metrics...
+2026-03-20 16:38:33 | INFO | P3 | Grouped into 14 carriers
+2026-03-20 16:38:33 | INFO | P3 | Created signal columns: delay_rate, high_delay_alert
+2026-03-20 16:38:33 | INFO | P3 | Enhanced signals table has 14 rows
+2026-03-20 16:38:33 | INFO | P3 | Wrote signals file: C:\Repos\cintel-03-signal-design\artifacts\aviation_signals_jan_2025.csv
+2026-03-20 16:38:33 | INFO | P3 | ========================
+2026-03-20 16:38:33 | INFO | P3 | Pipeline executed successfully!
+2026-03-20 16:38:33 | INFO | P3 | ========================
+2026-03-20 16:38:33 | INFO | P3 | END main()

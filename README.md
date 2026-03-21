@@ -143,3 +143,57 @@ uv run python -m cintel.signal_design_hennelly
 -artifacts/signals_hennelly.csv now includes a `high_error_alert` column
 
 -observed that none of the present data was flagged as a `high_error_alert`.  All were false.
+
+## Skills Applied to a New Problem
+
+### What the Project Does
+
+1. **Aviation Signal Analysis**: Analyzes airline on-time performance data for January 2025 to identify carriers with high delay rates (>= 15 minutes on over 20% of flights)
+
+### How to Run It
+
+`python src/cintel/aviation_signal_design.py`
+note: `aviation_signal_analysis.py` will also execute but was the original experimentation python script for `airline_ontime_data_jan_2025.csv` and does not include the full signal design. Proper script to scale and run for analysis is `aviation_signal_design.py`
+
+Successful runs will create artifacts in the `artifacts/` folder and log to `project.log`.
+
+### Documentation and Notebooks
+
+- **Documentation**: Visit the built site at `site/index.html` or build with `uv run zensical build`
+
+- **Project Docs**: See `docs/` folder for detailed instructions, glossary, and project files.
+
+- **Notebooks**: No Jupyter notebooks are included, but the scripts can be adapted for interactive analysis.
+
+### Showcase
+
+#### Key Visualization
+
+Run the aviation analysis to see carrier performance rankings in the terminal output.
+
+#### Results Table
+
+Aviation Signal Analysis Results:
+
+| Carrier        | Flights | Delayed | Delay Rate | High Delay Alert |
+|----------------|---------|---------|------------|------------------|
+| WN (Southwest) | 105307  | 20891   | 19.8%      | false            |
+| UA (United)    | 62007   | 11299   | 18.2%      | false            |
+| AS (Alaska)    | 18163   | 3236    | 17.8%      | false            |
+| YX (Republic)  | 27833   | 4392    | 15.8%      | false            |
+| HA (Hawaiian)  | 6690    | 874     | 13.1%      | false            |
+| MQ (Envoy)     | 21890   | 4314    | 19.7%      | false            |
+| F9 (Frontier)  | 15526   | 3903    | 25.1%      | true             |
+| OO (SkyWest)   | 65036   | 13253   | 20.4%      | true             |
+| DL (Delta)     | 76306   | 16661   | 21.8%      | true             |
+| B6 (JetBlue)   | 17918   | 4264    | 23.8%      | true             |
+| OH (PSA)       | 21094   | 6338    | 30.0%      | true             |
+| NK (Spirit)    | 17544   | 3656    | 20.8%      | true             |
+| G4 (Allegiant) | 9345    | 2294    | 24.5%      | true             |
+| AA (American)  | 75088   | 16369   | 21.8%      | true             |
+
+#### Summary of Insights
+
+- **Aviation**: 8 out of 14 major carriers exceed the 20% delay threshold, highlighting areas for operational improvement. Southwest (WN) leads with the most flights and a manageable delay rate.
+
+This project showcases how derived signals enable proactive monitoring and data-driven decision making.
